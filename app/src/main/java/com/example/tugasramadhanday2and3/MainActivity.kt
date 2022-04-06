@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
         } else {
             Toast.makeText(
                 applicationContext,
-                "Nama tidak tersimpan karena kosong",
+                "Cannot be Empty",
                 Toast.LENGTH_LONG
             ).show()
         }

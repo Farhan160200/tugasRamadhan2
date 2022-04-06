@@ -25,12 +25,12 @@ public abstract class NameRoomDatabase: RoomDatabase() {
 
                     nameDao.deleteAll()
 
-                    var name = Name("Rafly")
+                    var name = Name("farhan")
                     nameDao.insert(name)
-                    name = Name("Raihan")
+                    name = Name("farhan")
                     nameDao.insert(name)
 
-                    name = Name("TODO!")
+                    name = Name("farhan")
                     nameDao.insert(name)
                 }
             }
@@ -46,12 +46,11 @@ public abstract class NameRoomDatabase: RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     NameRoomDatabase::class.java,
-                    "word_database"
+                    "database.db"
                 ).addCallback(NameDatabaseCallback(scope)).build()
                 INSTANCE = instance
                 instance
             }
         }
     }
-
 }
